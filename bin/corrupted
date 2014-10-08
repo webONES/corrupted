@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'commander/import'
+require 'corrupted'
+
+# program :version, '0.0.1'
+program :version, Corrupted::VERSION
+program :description, 'generates corrupted files for homeworks 🙊'
+
+command :generate do |c|
+  c.syntax = 'corrupted generate NAME EXTENSION KB_SIZE '
+  c.summary = 'wut?'
+  c.description = 'ideal for homeworks'
+  c.example 'description', 'command example'
+  # c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    puts args
+    name = args[0] #name of the file
+    extension = args[1] # output extension
+    size = args[2] # file size in kilobytes
+
+    Corrupted.create(name, extension)
+    # Do something or c.when_called Corrupted::Commands::Generate
+  end
+end

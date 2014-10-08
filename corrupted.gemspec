@@ -6,11 +6,11 @@ require 'corrupted/version'
 Gem::Specification.new do |spec|
   spec.name          = "corrupted"
   spec.version       = Corrupted::VERSION
-  spec.authors       = ["joseramonc"]
-  spec.email         = ["joserracamacho@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.authors       = ["joseramonc", "arandilopez"]
+  spec.email         = [""]
+  spec.summary       = %q{Generate corrupted Files from CLI.}
+  spec.description   = %q{Gem to generated corrupted files, ideal for homeworks 🙊.}
+  spec.homepage      = "https://github.com/webONES/corrupted"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "commander", "~> 4.2.1"
 end
