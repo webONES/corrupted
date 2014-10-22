@@ -1,30 +1,40 @@
 # Corrupted
 
-TODO: Write a gem description
+A lightwight library to generate files with bytes inside, so they look like 'corrupted' files if they are open with a text editor.
+
+Hopefully you'll find this gem useful for *something*.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install in the command line with:
 
-```ruby
-gem 'corrupted'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install corrupted
+gem install corrupted
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Then your can generate a file in the current directory with:
+
+```
+corrupted generate FILE_NAME EXTENSION SIZE
+```
+
+* File name can be a in an absolute path.
+
+* Size is the desired size of the file in kilobytes.
+
+To generate homework.docx of 15MB can be done with:
+
+```
+corrupted generate homework docx 15000
+```
+
+Any feedback or new features are greatly appreciated at the [issue tracker](https://github.com/webones/corrupted/issues)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/corrupted/fork )
+1. Fork it ( https://github.com/webones/corrupted/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
