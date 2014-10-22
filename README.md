@@ -1,4 +1,5 @@
 # Corrupted
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/webONES/corrupted?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A lightwight library to generate files with bytes inside, so they look like 'corrupted' files if they are open with a text editor.
 
