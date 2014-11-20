@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Corrupted by webONES</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Corrupted</h1>
+        <h2>Gem for generate corrupted files for your forgotten homeworks</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/webONES/corrupted/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/webONES/corrupted/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/webONES/corrupted" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="corrupted" class="anchor" href="#corrupted" aria-hidden="true"><span class="octicon octicon-link"></span></a>Corrupted</h1>
+
+<p><a href="https://gitter.im/webONES/corrupted?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a></p>
+
+<p>A lightwight library to generate files with bytes inside, so they look like 'corrupted' files if they are open with a text editor.</p>
+
+<p>Hopefully you'll find this gem useful for <em>something</em>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Install in the command line with:</p>
+
+<div class="highlight highlight-shell"><pre>gem install corrupted</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Then your can generate a file in the current directory with:</p>
+
+<div class="highlight highlight-shell"><pre>corrupted generate FILE_NAME EXTENSION SIZE</pre></div>
+
+<ul>
+<li><p>File name can be a in an absolute path.</p></li>
+<li><p>Size is the desired size of the file in kilobytes.</p></li>
+</ul>
+
+<p>To generate homework.docx of 15MB can be done with:</p>
+
+<div class="highlight highlight-shell"><pre>corrupted generate homework docx 15000</pre></div>
+
+<p>Any feedback or new features are greatly appreciated at the <a href="https://github.com/webones/corrupted/issues">issue tracker</a></p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="https://github.com/webones/corrupted/fork">https://github.com/webones/corrupted/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create a new Pull Request</li>
+</ol>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
